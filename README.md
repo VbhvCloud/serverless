@@ -32,3 +32,8 @@ Before deploying the Lambda function, ensure you have configured the following e
 
 3. **Monitor Logs:**
    - Monitor the CloudWatch Logs for the Lambda function to view execution logs.
+
+4. **To zip it locally:**
+    ```bash
+    make zip
+    ```
