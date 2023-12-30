@@ -8,7 +8,7 @@ The Lambda function is triggered by an event published to an Amazon SNS topic. T
 
 ## Functionality
 
-1. **Email Notification:** Sends an email notification about the download status using Mailgun.
+1. **Email Notification:** Sends an email notification about the upload status using Mailgun.
 2. **Email Tracking:** Tracks the sent emails in AWS DynamoDB.
 
 ## Configuration
@@ -28,7 +28,7 @@ Before deploying the Lambda function, ensure you have configured the following e
    - Subscribe the Lambda function to the appropriate SNS topic.
 
 2. **Send SNS Event:**
-   - Send an SNS event with details about the download status of image
+   - Send an SNS event with details about the upload status of image
 
 3. **Monitor Logs:**
    - Monitor the CloudWatch Logs for the Lambda function to view execution logs.

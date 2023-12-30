@@ -41,8 +41,8 @@ def email_status(user_email, message):
         # Mailgun API endpoint for sending emails
         mailgun_api_url = f'https://api.mailgun.net/v3/{mailgun_domain}/messages'
 
-        subject = 'Download Status Notification'
-        body_text = 'The status of your download is:\n\n {} \n\n Thanks,\nVaibhav Mahajan'.format(message)
+        subject = 'Upload Status Notification'
+        body_text = 'The status of your upload is:\n\n {} \n\n Thanks,\nVaibhav Mahajan'.format(message)
 
 
         # Create the API request
@@ -50,8 +50,8 @@ def email_status(user_email, message):
             mailgun_api_url,
             auth=('api', mailgun_api_key),
             data={
-                'from': f'{sender}',
-                'to': f'{user_email}',
+                'from': sender,
+                'to': user_email,
                 'subject': subject,
                 'text': body_text
             }
